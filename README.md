@@ -2,8 +2,8 @@
 
 - [プロダクト名](#サンプル（プロダクト名）)
   - [Section 1](#section-1)
-- [Development Rules](##About-development-Rules)
-- [Installation Guide](##Installation-Guide)
+- [Development Rules](#development-rules)
+- [Installation Guide](#installation-guide)
 
 # サンプル（プロダクト名）
 
