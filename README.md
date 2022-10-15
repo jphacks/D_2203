@@ -2,23 +2,17 @@
 
 - [プロダクト名](#サンプル（プロダクト名）)
   - [Section 1](#section-1)
-- [Development Rules](##About development Rules)
-- [Installation Guide](##Installation Guide)
+- [Development Rules](##About-development-Rules)
+- [Installation Guide](##Installation-Guide)
 
 # サンプル（プロダクト名）
 
----
-
- ここにプロダクトの画像がほしい！ 
-
----
-
 <div style="display: flex;">
-<img height="15" src="https://img.shields.io/badge/-PHP%208.0.23-black.svg?logo=php&style=plastic">
-<img height="15" src="https://img.shields.io/badge/-Laravel%208.33.1-black.svg?logo=laravel&style=plastic">
-<img height="15" src="https://img.shields.io/badge/-Docker%2020.10.17-black.svg?logo=docker&style=plastic">
-<img height="15" src="https://img.shields.io/badge/-Mysql%20%208.0.30-black.svg?logo=mysql&style=plastic">
-<img height="15" src="https://img.shields.io/badge/-Apache%202.4.54-black.svg?logo=apache&style=plastic">
+<img height="20" src="https://img.shields.io/badge/-PHP%208.0.23-black.svg?logo=php&style=plastic">
+<img height="20" src="https://img.shields.io/badge/-Laravel%208.33.1-black.svg?logo=laravel&style=plastic">
+<img height="20" src="https://img.shields.io/badge/-Docker%2020.10.17-black.svg?logo=docker&style=plastic">
+<img height="20" src="https://img.shields.io/badge/-Mysql%20%208.0.30-black.svg?logo=mysql&style=plastic">
+<img height="20" src="https://img.shields.io/badge/-Apache%202.4.54-black.svg?logo=apache&style=plastic">
 </div>
 
 
