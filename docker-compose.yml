@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  database:
+    image: mysql:8
+    container_name: database
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: php_docker
+    volumes:
+      - ./mysql:/var/lib/mysql
+    ports:
+      - '4306:3306'
+  php-apache:
+    container_name: php-apache
+    build:
+      context: ./php
+    ports:
+      - '8080:80'
+    volumes:
+      - ./src:/var/www/php_docker
+      - ./apache/default.conf:/etc/apache2/sites-enabled/000-default.conf
+    depends_on:
+      - database
