@@ -1,11 +1,13 @@
 # index
 
-- [プロダクト名](#サンプル（プロダクト名）)
+- [ぺねらぼ](#ぺねらぼ)
   - [Section 1](#section-1)
 - [Development Rules](#development-rules)
 - [Installation Guide](#installation-guide)
 
-# サンプル（プロダクト名）
+# ぺねらぼ
+
+[![IMAGE ALT TEXT HERE](https://jphacks.com/wp-content/uploads/2022/08/JPHACKS2022_ogp.jpg)](https://www.youtube.com/watch?v=LUPQFB4QyVo)
 
 <div style="display: flex;">
 <img height="20" src="https://img.shields.io/badge/-PHP%208.0.23-black.svg?logo=php&style=plastic">
@@ -16,10 +18,23 @@
 </div>
 
 
-[![IMAGE ALT TEXT HERE](https://jphacks.com/wp-content/uploads/2022/08/JPHACKS2022_ogp.jpg)](https://www.youtube.com/watch?v=LUPQFB4QyVo)
-
 ## 製品概要
+
+<b>「 セキュリティ学習 × Tech 」</b>
+
+セキュリティを勉強したいけど楽しく手軽に勉強できるサイトがない...書籍は分厚いし敷居が高い...そんな悩みをお持ちではないでしょうか？
+
+この<b>ぺねらぼ</b>ではそんな悩みを大解決します． ストーリーをみて楽しく学ぶことができます． また面倒なテスト環境の構築は必要ありません!!
+
+是非<b>ぺねらぼ</b>セキュリティについて勉強しましょう！
+
+
 ### 背景(製品開発のきっかけ、課題等）
+
+近年セキュリティエンジニアの需要は高まる一方セキュリティに関する学習が楽しくできるサイトは日本にまだありません． 
+
+ないなら自分たちが作ろう！ そんな思いで開発を行いました
+
 ### 製品説明（具体的な製品の説明）
 ### 特長
 #### 1. 特長1
