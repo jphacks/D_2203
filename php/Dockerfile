@@ -1,3 +1,5 @@
+#dockerfile
+
 FROM php:8.0-apache
 
 RUN apt update \
@@ -16,7 +18,6 @@ RUN apt update \
             pdo_mysql \
             mysqli
 
-WORKDIR /var/www/php_docker
+WORKDIR /var/www/laravel
 RUN a2enmod rewrite
-
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

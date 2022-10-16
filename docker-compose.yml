@@ -6,7 +6,7 @@ services:
     container_name: database
     environment:
       MYSQL_ROOT_PASSWORD: secret
-      MYSQL_DATABASE: php_docker
+      MYSQL_DATABASE: laravel
     volumes:
       - ./mysql:/var/lib/mysql
     ports:
@@ -18,7 +18,7 @@ services:
     ports:
       - '8080:80'
     volumes:
-      - ./src:/var/www/php_docker
+      - ./src:/var/www/laravel
       - ./apache/default.conf:/etc/apache2/sites-enabled/000-default.conf
     depends_on:
       - database
