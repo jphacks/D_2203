@@ -8,7 +8,7 @@
     <body>
         <section class="hero is-fullheight">
             <div class="columns is-centered hero-body has-text-centered ">
-                <div class="column box is-half" method="get" action="search.php">
+                <div class="column box is-half">
                     <div class="column notification">
                         <b><?php echo $_GET["q"]; ?></b>に一致する情報は見つかりませんでした。
                     </div>
