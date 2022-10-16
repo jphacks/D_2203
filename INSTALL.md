@@ -34,10 +34,10 @@ php_docker
 ```bash
 
 # clone
-git clone https://github.com/lion-rion/laravel_blog.git
+git clone https://github.com/jphacks/D_2203.git laravel
 
 # change dir
-cd laravel_blog
+cd laravel
 
 # docker-compose and start
 docker-compose up -d --build
@@ -52,7 +52,7 @@ DBの設定を以下の通りに変更する
 DB_CONNECTION=mysql
 DB_HOST=database
 DB_PORT=3306
-DB_DATABASE=php_docker
+DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=secret
 ```
@@ -62,7 +62,7 @@ DB_PASSWORD=secret
 
 ```
 # login apache bash
-docker-compose exec apache /bin/bash
+docker-compose exec php-apache /bin/bash
 
 # package install
 composer install
