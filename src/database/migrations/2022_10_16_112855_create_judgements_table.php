@@ -15,7 +15,7 @@ class CreateJudgementsTable extends Migration
     {
         Schema::create('judgements', function (Blueprint $table) {
             $table->id();
-            $table->boolean('sql-1')->default(false);
+            $table->boolean('sql_1')->default(false);
             $table->timestamps();
         });
     }
