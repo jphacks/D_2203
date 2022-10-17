@@ -1,0 +1,21 @@
+version: 2
+updates:
+  - package-ecosystem: "composer"
+    directory: "/src"
+    schedule:
+      interval: "dayly"
+    reviewers:
+      - "※ レビュワーのGitHubのIDを指定"
+    labels:
+      - "アップデート対応"
+      - "php"
+  - package-ecosystem: "npm"
+    directory: "/src"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    reviewers:
+      - "※ レビュワーのGitHubのIDを指定"
+    labels:
+      - "アップデート対応"
+      - "javascript"
