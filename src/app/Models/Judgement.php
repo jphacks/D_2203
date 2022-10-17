@@ -10,6 +10,11 @@ class Judgement extends Model
 {
     use HasFactory;
 
+    //編集を行うカラムはfillableに記述
+    protected $fillable = [
+        'sql_1'
+    ];
+
     public function user() {
         return $this->belongsTo(User::class);
     }
