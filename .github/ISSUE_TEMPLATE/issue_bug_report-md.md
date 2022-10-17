@@ -2,7 +2,7 @@
 name: ISSUE_BUG_REPORT.md
 about: this is template for bug issue
 title: 'Bug : '
-labels: ''
+labels: bug
 assignees: ''
 
 ---
