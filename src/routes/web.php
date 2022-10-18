@@ -22,3 +22,11 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+
+// use App\Http\Controllers\Controller;
+
+Route::get('/top', function () {
+    return view('top');
+});
+// Route::get('/top', [Controller::class, 'top'])->name('top');
