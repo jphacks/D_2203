@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('top');
 });
 
 Route::get('/dashboard', function () {
@@ -26,7 +26,7 @@ require __DIR__.'/auth.php';
 
 // use App\Http\Controllers\Controller;
 
-Route::get('/top', function () {
-    return view('top');
+Route::get('/welcome', function () {
+    return view('welcome');
 });
 // Route::get('/top', [Controller::class, 'top'])->name('top');
