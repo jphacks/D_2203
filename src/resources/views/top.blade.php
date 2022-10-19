@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="{{ asset('/css/style.css')  }}" type="text/css" />
 	<link rel="stylesheet" href="{{ asset('/css/dark.css')  }}" type="text/css" />
 	<link rel="stylesheet" href="{{ asset('/css/font-icons.css')  }}" type="text/css" />
-	<link rel="stylesheet" href="{{ asset('/css/css/animate.css')  }}" type="text/css" />
+	<link rel="stylesheet" href="{{ asset('/css/animate.css')  }}" type="text/css" />
 
 	
 
