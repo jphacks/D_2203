@@ -15,4 +15,4 @@ jobs:
         run: docker compose up -d --build
 
       - name: Test
-        run: docker compose exec php-apache-2 /bin/bash
+        run: docker compose exec php-apache /bin/bash
