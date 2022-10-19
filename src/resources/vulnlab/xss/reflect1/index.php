@@ -4,7 +4,6 @@ $token = generate_token(basename(dirname(__FILE__)));
 setcookie("token", $token, time()+36000, basename(dirname(__FILE__)));
 ?>
 
-<!doctype html>
 <html>
     <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
