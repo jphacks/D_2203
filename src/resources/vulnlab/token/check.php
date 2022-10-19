@@ -18,7 +18,14 @@ if( $referer_url['host'] !== SERVER_HOST){
 
 $name = basename(dirname($referer_url['path']));
 
-if ($_SESSION[$name] === $_POST['token']){
+$token = $_POST['token'];
+
+if (strlen($token) != 128){
+    echo "不正なtokenの処理";
+    die();
+}
+
+if ($_SESSION[$name] === $token){
     echo "正解した事を記録する処理";
 }else{
     echo "不正なtokenの処理";
