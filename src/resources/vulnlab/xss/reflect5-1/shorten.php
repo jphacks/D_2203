@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . "../../../token/conf.php";
 setcookie("redirect_uri", $_GET["q"], time()+36000, basename(dirname(__FILE__)));
 ?>
 
@@ -14,7 +15,7 @@ setcookie("redirect_uri", $_GET["q"], time()+36000, basename(dirname(__FILE__)))
                 <div class="column box is-half">
                     <div class="column notification">
                         <p>URLを短縮しました。短縮したリンクは以下の通りです。</p>
-                        <a href="s.php"><?php echo (empty($_SERVER['HTTPS']) ? 'http://' : 'https://').$_SERVER['HTTP_HOST'].dirname($_SERVER['REQUEST_URI'])."/s.php"?></a>
+                        <a href="s.php"><?php echo htmlspecialchars( (empty($_SERVER['HTTPS']) ? 'http://' : 'https://').SERVER_HOST.":".SERVER_PORT.dirname($_SERVER['REQUEST_URI'])."/s.php" ) ?></a>
                     </div>
                 </div>
             </div>
