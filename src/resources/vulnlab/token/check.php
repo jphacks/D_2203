@@ -21,14 +21,14 @@ $name = basename(dirname($referer_url['path']));
 $token = $_POST['token'];
 
 if (strlen($token) != 128){
-    echo "不正なtokenの処理";
+    echo "不正なtoken";
     die();
 }
 
 if ($_SESSION[$name] === $token){
-    echo "正解した事を記録する処理";
+    echo "正解です！";
 }else{
-    echo "不正なtokenの処理";
+    echo "不正なtoken";
 }
 
 ?>
