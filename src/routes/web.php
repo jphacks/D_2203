@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\ClearController;
+use App\Models\Judgement;
 use Illuminate\Support\Facades\Route;
-
+use App\Models\User;
+use App\Http\Controllers\CourseController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,13 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('top');
-});
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/courses', [CourseController::class, 'index']);
+
+//それぞれのコースのホームページへのルーティング
+Route::get('/courses/{course}',  [CourseController::class, 'show'])->middleware(['auth']);
+
+//それぞれのコースのステージ別ページへのルーティング
+Route::get('/courses/{course}/{course2}', [CourseController::class, 'detail'])->middleware(['auth'])->middleware('clear');
+
+Route::post('/courses/{course}/{course2}/update', [ClearController::class, 'clear']);
 
 require __DIR__.'/auth.php';
 
