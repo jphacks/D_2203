@@ -5,7 +5,7 @@
         <div class="course_container">
             <div class="flex bg-white justify-between">
                 <div class="course_exp">
-                    <h3 class="course_exp_title">SQL injection (SQLi)</h3>
+                    <h3 class="course_exp_title">Cross Site Scripting (XSS)</h3>
                     <p>XSS(クロスサイトスクリプティング)とは、WebサイトやWebアプリの脆弱性を利用して悪質なスクリプトを埋め込み、ユーザーの情報を抜き取ったりする攻撃です。</p>
                     <p>このコースではどの様にスクリプトを埋め込みユーザーの情報を抜き取るのかを学習します。</p>
                 </div>
