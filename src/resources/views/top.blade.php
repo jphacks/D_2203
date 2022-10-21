@@ -4,6 +4,7 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="SemiColonWeb" />
+	<link rel="shortcut icon" href="/images/logo/favicon.ico">
 
 	<!-- Stylesheets
 	============================================= -->
@@ -101,7 +102,7 @@
 					<div class="vertical-middle">
 						<div class="container">
 
-							<div class="row">
+							<div class="rowinit;">
 								<div class="col-md-5">
 									<div class="emphasis-title">
 										<h2  style="color:#dadada; text-shadow:2px 2px 1px #a1a1a1;">初めてでも<br><div style="color: #7b7b7b; text-shadow:2px 2px 2px #dadada;">安心</div></h2>
