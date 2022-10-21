@@ -1,10 +1,6 @@
-sql instal
-<head>
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|M+PLUS+Rounded+1c:300,400,500,700,800|Quicksand:400,700&amp;display=swap" as="style">
-</head>
-<body>
+@extends('layout')
+@section('title','ぺねらぼ | 法律')
+@section('content')
     <div class="main">
         <div class="course_container">
             <div class="flex bg-white justify-between">
@@ -17,7 +13,8 @@ sql instal
             </div>
         </div>
 
-        <!--第1章-->
+        <!--第1ステージ-->
+        @if($judge->law_1== 1)
         <h3 class="syo">第1ステージ</h3>
         <div class="course_container">
             <div class="flex-wrap">
@@ -30,10 +27,28 @@ sql instal
         <div class="btn_container">
             <a href="law/law_1" class="btn-flat-border">第1ステージを学習する</a>
         </div>
+        @endif
+        @if($judge->law_1 != 1)
+        <div class="flex">
+            <h3 class="syo">第1ステージ</h3>
+            <p class="syo-mi" style="color: red">※法律コースが未クリアなので進めないよ!</p>
+        </div>
+        <div class="course_container">
+            <div class="flex-wrap">
+                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
+                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
+                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
+                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
+            </div>
+        </div>
+        <div class="btn_container">
+            <p class="btn-flat-border-lock">法律コースが未クリアです</p>
+        </div>
+        @endif
 
-        <!--第2章-->
-        @if($judge->sql_1 == 1)
-        <h3 class="syo">第2章</h3>
+        <!--第2ステージ-->
+        @if($judge->law_2 == 1)
+        <h3 class="syo">第2ステージ</h3>
         <div class="course_container">
             <div class="flex-wrap">
                 <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
@@ -43,15 +58,15 @@ sql instal
             </div>
         </div>
         <div class="btn_container">
-            <a href="#" class="btn-flat-border">第2章を学習する</a>
+            <a href="law/law_2" class="btn-flat-border">第2ステージを学習する</a>
         </div>
         @endif
 
         <!--クリアしてない場合-->
-        @if($judge->sql_1 != 1)
+        @if($judge->law_2 != 1)
         <div class="flex">
-            <h3 class="syo">第2章</h3>
-            <p class="syo-mi" style="color: red">※第1章が未クリアなので進めないよ!</p>
+            <h3 class="syo">第2ステージ</h3>
+            <p class="syo-mi" style="color: red">※第1ステージが未クリアなので進めないよ!</p>
         </div>
         <div class="course_container">
             <div class="flex-wrap">
@@ -62,11 +77,44 @@ sql instal
             </div>
         </div>
         <div class="btn_container">
-            <p class="btn-flat-border-lock">第1章が未クリアです</p>
+            <p class="btn-flat-border-lock">第1ステージが未クリアです</p>
         </div>
         @endif
         <!--クリアしてない場合終了-->
+        <!--第2ステージ-->
+        @if($judge->law_3 == 1)
+        <h3 class="syo">第3ステージ</h3>
+        <div class="course_container">
+            <div class="flex-wrap">
+                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
+                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
+                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
+                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
+            </div>
+        </div>
+        <div class="btn_container">
+            <a href="law/law_3" class="btn-flat-border">第3ステージを学習する</a>
+        </div>
+        @endif
+
+        <!--クリアしてない場合-->
+        @if($judge->law_3 != 1)
+        <div class="flex">
+            <h3 class="syo">第3ステージ</h3>
+            <p class="syo-mi" style="color: red">※第2ステージが未クリアなので進めないよ!</p>
+        </div>
+        <div class="course_container">
+            <div class="flex-wrap">
+                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
+                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
+                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
+                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
+            </div>
+        </div>
+        <div class="btn_container">
+            <p class="btn-flat-border-lock">第2ステージが未クリアです</p>
+        </div>
+        @endif
         
 
     </div>
-</body>

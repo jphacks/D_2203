@@ -57,7 +57,7 @@
 			</div>
 		</section>
 
-		@include('components.header')
+		@include('header')
 
 		<!-- Content
 		============================================= -->
@@ -186,7 +186,7 @@
 			</div>
 		</section><!-- #content end -->
 
-		@include('components.footer')
+		@include('footer')
 		
 
 	</div><!-- #wrapper end -->

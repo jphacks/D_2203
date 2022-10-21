@@ -1,0 +1,255 @@
+a{
+    text-decoration:none;
+    color: black;
+}
+
+
+body{
+    background-color: #FAFAFA;
+}
+
+.course_name{
+    font-family: Lato, "Hiragino Maru Gothic Pro", "Meiryo UI", Meiryo, "MS PGothic", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.our-team {
+    border-radius: 3px;
+    box-shadow: rgb(0 0 0 / 4%) 0px 2px 10px;
+    padding: 30px 40px 50px 40px;
+    margin: 0 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    }
+
+
+    .our-team .picture {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 0px;
+    z-index: 1;
+    position: relative;
+    }
+
+    /*カード上部の図形*/
+
+    /* .our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+    } */
+
+    .our-team:hover .picture::before {
+    height: 100%;
+    }
+
+    .our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    }
+
+    .our-team .picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+    }
+
+    .our-team:hover .picture img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+    }
+
+    .our-team .title {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+    }
+
+    .our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+    }
+
+    .course_detail{
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .our-team:hover .social {
+    bottom: 0;
+    }
+
+    .our-team .social li {
+    display: inline-block;
+    }
+
+    .our-team .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    }
+
+    .our-team .social li a:hover {
+    color: #1369ce;
+    background-color: #f7f5ec;
+    }
+
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+/*コース別*/
+
+.main{
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 1rem;
+    margin: 0 auto;
+
+}
+
+.course_container{
+    box-shadow: rgb(0 0 0 / 7%) 0px 2px 10px;
+    margin-top: 30px;
+}
+
+/*flexシリーズ*/
+
+.flex{
+    display: flex;
+}
+
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.justify-between{
+    justify-content: space-between;
+}
+
+/*************/
+
+.course_exp{
+    margin-left: 50px;
+
+}
+
+.course_exp p{
+    font-family: Lato, "Hiragino Maru Gothic Pro", "Meiryo UI", Meiryo, "MS PGothic", sans-serif;
+}
+
+.course_exp_title{
+    font-family: Economica, sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+
+/*ボタン設定*/
+.btn-flat-border {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0.3em 0;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+    text-align: center;
+}
+
+.btn-flat-border:hover {
+    background: #67c5ff;
+    color: white;
+}
+
+.btn_container{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: rgb(0 0 0 / 7%) 0px 2px 10px;
+}
+/*********/
+
+.syo {
+    margin-top: 50px;
+    margin-left: 30px;
+    text-align: center;
+    width: 130px;
+    /*線の種類（実線） 太さ 色*/
+    border-bottom: solid 3px black;
+  }
+
+
+  .syo-mi {
+    margin-top: 50px;
+    margin-left: 30px;
+    text-align: center;
+  }
+
+  .btn-flat-border-lock {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0.3em 0;
+    text-decoration: none;
+    color: #b4b4b4;
+    border: solid 2px #a4a4a4;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    transition: .4s;
+    text-align: center;
+}
+
+.btn-flat-border-lock:hover {
+    background: #ff0000;
+    opacity: 80%;
+    color: white;
+}
