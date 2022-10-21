@@ -160,10 +160,10 @@
 						<div class="container">
 
 							<h1 style="color: #3c4043;">About Us</h1>
-							<h2 style="color: #3c4043;">&nbsp;&nbsp;&nbsp;-&nbsp;ぺねらぼ&nbsp;-</h2>
-							<h2 style="font-weight:100; color:#3c4043">&nbsp;&nbsp;&nbsp;<span style="color:#1abc9c; text-shadow:1px 1px 1px #34495e;">penetration test</span> × <span style="color:#ff7b38; text-shadow:1px 1px 1px #34495e;">laboratory</span></h2>
+							<h2 style="color: #3c4043;">-&nbsp;ぺねらぼ&nbsp;-</h2>
+							<h2 style="font-weight:100; color:#3c4043"><span style="color:#1abc9c; text-shadow:1px 1px 1px #34495e;">penetration test</span> × <span style="color:#ff7b38; text-shadow:1px 1px 1px #34495e;">laboratory</span></h2>
 							<h3 style="color: #3c4043;"><span style="font-size:larger;font-weight:100; color:#1abc9c; text-shadow:1px 1px 1px #34495e;">penetration test</span>&nbsp;(ペネトレーションテスト)は<br>悪意のあるハッカーの手口に基づいて実際にシステムへの侵入を試みる<br>「模擬ハッキング」のことです。</h3>
-							<h3 style="color: #3c4043;">しかし、一人でこれを行うには少し準備が必要です。<br>初めてセキュリティを学ぶ人には少し難しく感じるかもしれません。<br>ぺねらぼではセキュリティ初学者の方へ向けて<br>安全に、簡単に、手を動かして学習する環境を提供しています。</h3>
+							<h3 style="color: #3c4043;">しかし、一人でこれを行うには少し準備が必要です。<br>初めてセキュリティを学ぶ人には少し難しく感じるかもしれません。<br>ぺねらぼ&nbsp;ではセキュリティ初学者の方へ向けて<br>安全に、簡単に、手を動かして学習する環境を提供しています。</h3>
 							
 
 						</div>
