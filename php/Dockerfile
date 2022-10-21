@@ -18,6 +18,6 @@ RUN apt update \
             pdo_mysql \
             mysqli
 
-WORKDIR /var/www/laravel
+WORKDIR /var/www/laravel2
 RUN a2enmod rewrite
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
