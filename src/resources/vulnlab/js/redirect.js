@@ -1,0 +1,1 @@
+window.location.href = getCookie("redirect_uri");
