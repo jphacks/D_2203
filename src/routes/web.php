@@ -17,6 +17,7 @@ use App\Http\Controllers\CourseController;
 */
 
 
+
 Route::get('/', function(){
     return view('top');
 });
