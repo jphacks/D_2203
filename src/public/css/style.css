@@ -99,6 +99,24 @@ dl, dt, dd, ol, ul, li {
 	Typography
 -----------------------------------------------------------------*/
 
+   span.type_1 {
+	font-size:50px;
+	margin-right: 10px;
+	margin-left: 15px;
+   }
+   
+   span.type_2 {
+	margin-right: 8px;
+   }
+   
+   span.type_3 {
+	margin-left: 4px;
+   }
+
+   span.type_4 {
+	font-size:55px;
+   }
+
 
 body {
 	line-height: 1.5;
@@ -128,6 +146,7 @@ iframe {
 	Basic Layout Styles
 -----------------------------------------------------------------*/
 
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 h1,
 h2,
@@ -139,7 +158,7 @@ h6 {
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Noto Sans Japanese', sans-serif;
 }
 
 h5,
@@ -187,7 +206,7 @@ h2 > span:not(.nocolor):not(.badge),
 h3 > span:not(.nocolor):not(.badge),
 h4 > span:not(.nocolor):not(.badge),
 h5 > span:not(.nocolor):not(.badge),
-h6 > span:not(.nocolor):not(.badge) { color: #1ABC9C; }
+h6 > span:not(.nocolor):not(.badge) { color: #1e1f1f; }
 
 p,
 pre,
@@ -13384,7 +13403,7 @@ h3.titular-title { font-size: 2rem; }
 
 .emphasis-title h1,
 .emphasis-title h2 {
-	font-weight: 400;
+	font-weight: 700;
 	letter-spacing: 0;
 	text-transform: none;
 }

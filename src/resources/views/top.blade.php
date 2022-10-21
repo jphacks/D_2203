@@ -43,8 +43,8 @@
                      <div class="container">
 						<!--ここにコンテンツ-->
 						<div class="emphasis-title center">
-							<h1 data-animate="fadeInUp"><strong>ぺねらぼ</strong> へようこそ</h1>
-							<h4 data-animate="fadeInUp">みたいな</h4>
+							<h1 data-animate="fadeInUp"><span class="type_2">ぺ</span>ねら<span class="type_3">ぼ</span><span class="type_1">へ</span><span class="type_4">ようこそ</spaan></h1>
+							<h3 data-animate="fadeInUp">～初めてのセキュリティ～</h3>
 						</div>
 					 </div>
                     </div>
@@ -104,7 +104,7 @@
 							<div class="row">
 								<div class="col-md-5">
 									<div class="emphasis-title">
-										<h2>初めてでも<br>安心</h2>
+										<h2  style="color:#dadada; text-shadow:2px 2px 1px #a1a1a1;">初めてでも<br><div style="color: #7b7b7b; text-shadow:2px 2px 2px #dadada;">安心</div></h2>
 										<p class="lead topmargin-sm">"ぺねらぼ" はセキュリティ初学者向けに制作された<br>実践形の学習サイトです。</p>
 									</div>
 								</div>
@@ -149,17 +149,21 @@
 
 				<div class="section m-0 border-0" style="background-image: url('images/parallax/3.jpg');">
 					<div class="heading-block center border-bottom-0 mb-0">
-						<h2>"全てのシステムにセキュリティを"</h2>
-						<h5>みたいな</h5>
+						<h2>"セキュリティを、もっと身近に"</h2>
 						<!--仮-->
 					</div>
 				</div>
 
-				<div class="section parallax min-vh-100 dark m-0 border-0 d-flex" style="background-image: url('images/parallax/home/10.jpg');"  data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
+				<div class="section parallax min-vh-100 dark m-0 border-0 d-flex" style="background-image: url('images/parallax/home/securelearn.jpg');"  data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
 					<div class="vertical-middle">
 						<div class="container">
 
-							<h1>About Us<br>></h1>
+							<h1 style="color: #3c4043;">About Us</h1>
+							<h2 style="color: #3c4043;">&nbsp;&nbsp;&nbsp;-&nbsp;ぺねらぼ&nbsp;-</h2>
+							<h2 style="font-weight:100; color:#3c4043">&nbsp;&nbsp;&nbsp;<span style="color:#1abc9c; text-shadow:1px 1px 1px #34495e;">penetration test</span> × <span style="color:#ff7b38; text-shadow:1px 1px 1px #34495e;">laboratory</span></h2>
+							<h3 style="color: #3c4043;"><span style="font-size:larger;font-weight:100; color:#1abc9c; text-shadow:1px 1px 1px #34495e;">penetration test</span>&nbsp;(ペネトレーションテスト)は<br>悪意のあるハッカーの手口に基づいて実際にシステムへの侵入を試みる<br>「模擬ハッキング」のことです。</h3>
+							<h3 style="color: #3c4043;">しかし、一人でこれを行うには少し準備が必要です。<br>初めてセキュリティを学ぶ人には少し難しく感じるかもしれません。<br>ぺねらぼではセキュリティ初学者の方へ向けて<br>安全に、簡単に、手を動かして学習する環境を提供しています。</h3>
+							
 
 						</div>
 					</div>
@@ -169,8 +173,8 @@
 					<div class="container text-center">
 
 						<div class="emphasis-title">
-							<h2>いますぐ始める</h2>
-							<p class="lead topmargin-sm">最初は簡単なチュートリアルです。さあ、お気軽にどうぞ。</p>
+							<h2 style="text-shadow: 2px 2px 7px #282828">いますぐ始める</h2>
+							<p class="lead topmargin-sm" style="text-shadow: 2px 2px 2px #282828">最初は簡単なチュートリアルです。さあ、お気軽にどうぞ。</p>
 						</div>
 
 						<a href="{{ route('login') }}" class="button button-border button-rounded button-light button-large">ログイン</a>
