@@ -14,11 +14,16 @@
         </div>
 
         <!--第1ステージ-->
-        @if($judge->law_1== 1)
-        <h3 class="syo">第1ステージ</h3>
+        <div class="flex">
+            @if($judge->law_1_clear == 1)
+            <img style="margin-top: 40px" height="50px" src="https://thumb.ac-illust.com/cf/cf770c271115a0f08b09de20532e27e4_t.jpeg" alt="">
+            @endif
+            <h3 class="syo">第1ステージ</h3>
+        </div>
+        
         <div class="course_container">
             <div class="flex-wrap">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
+                <img style="width: 50%;" src="{{asset('images/law_1/law_1_1.png')}}" alt="">
                 <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
                 <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
                 <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
@@ -27,28 +32,14 @@
         <div class="btn_container">
             <a href="law/law_1" class="btn-flat-border">第1ステージを学習する</a>
         </div>
-        @endif
-        @if($judge->law_1 != 1)
-        <div class="flex">
-            <h3 class="syo">第1ステージ</h3>
-            <p class="syo-mi" style="color: red">※法律コースが未クリアなので進めないよ!</p>
-        </div>
-        <div class="course_container">
-            <div class="flex-wrap">
-                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
-            </div>
-        </div>
-        <div class="btn_container">
-            <p class="btn-flat-border-lock">法律コースが未クリアです</p>
-        </div>
-        @endif
-
         <!--第2ステージ-->
         @if($judge->law_2 == 1)
-        <h3 class="syo">第2ステージ</h3>
+        <div class="flex">
+            @if($judge->law_2_clear == 1)
+            <img style="margin-top: 40px" height="50px" src="https://thumb.ac-illust.com/cf/cf770c271115a0f08b09de20532e27e4_t.jpeg" alt="">
+            @endif
+            <h3 class="syo">第2ステージ</h3>
+        </div>
         <div class="course_container">
             <div class="flex-wrap">
                 <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
@@ -83,7 +74,12 @@
         <!--クリアしてない場合終了-->
         <!--第2ステージ-->
         @if($judge->law_3 == 1)
-        <h3 class="syo">第3ステージ</h3>
+        <div class="flex">
+            @if($judge->law_3_clear == 1)
+            <img style="margin-top: 40px" height="50px" src="https://thumb.ac-illust.com/cf/cf770c271115a0f08b09de20532e27e4_t.jpeg" alt="">
+            @endif
+            <h3 class="syo">第3ステージ</h3>
+        </div>
         <div class="course_container">
             <div class="flex-wrap">
                 <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
