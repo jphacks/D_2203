@@ -3,23 +3,21 @@
 <body>
     <div class="container">
         <div class="row">
-            @if($judge->sql_1 == 0)
-            <a href="/courses/sql">
+            <a href="/courses/law">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="our-team">
                     <div class="picture">
                         <img class="img-fluid" src="https://budougumi0617.github.io/logos/mysql.png">
                     </div>
                     <div class="team-content">
-                        <h3 class="course_name">SQLi</h3>
+                        <h3 class="course_name">Laws</h3>
                     </div>
                     <div class="social">
-                        <p class="course_detail">データベースから不正にデータを取得することができてしまう脆弱性</p>
+                        <p class="course_detail">セキュリティに関する法律はたくさんあります．</p>
                     </div>
                 </div>
             </div>
             </a>
-            @endif
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="our-team">
                     <div class="picture">

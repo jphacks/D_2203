@@ -9,15 +9,16 @@ sql instal
         <div class="course_container">
             <div class="flex bg-white justify-between">
                 <div class="course_exp">
-                    <h3 class="course_exp_title">Cross Site Scripting (XSS)</h3>
-                    <p>XSS(クロスサイトスクリプティング)とは、WebサイトやWebアプリの脆弱性を利用して悪質なスクリプトを埋め込み、ユーザーの情報を抜き取ったりする攻撃です。</p>
-                    <p>このコースではどの様にスクリプトを埋め込みユーザーの情報を抜き取るのかを学習します。</p>
+                    <h3 class="course_exp_title">CyberSecurity Laws</h3>
+                    <p>サイバーセキュリティの世界にも法律は存在します。サイト主の承諾がない状態で攻撃を行ってしまうと逮捕に至ってしまう場合もあります。</p>
+                    <p>このコースでは遵守しなくてはならない法律を学習します。</p>
                 </div>
-                <img style="width: 400px" src="https://static.vecteezy.com/system/resources/previews/006/843/150/original/xss-attack-black-glyph-icon-cross-site-scripting-software-attack-client-side-code-injection-malware-computer-damage-silhouette-symbol-on-white-space-isolated-illustration-vector.jpg" alt="">
+                <img style="width: 400px" src="https://s3-ap-northeast-1.amazonaws.com/cdn.kuraneo2.jp/production/imgs/images/000/044/311/original.?1573890686" alt="">
             </div>
         </div>
+
         <!--第1章-->
-        <h3 class="syo">第1章</h3>
+        <h3 class="syo">第1ステージ</h3>
         <div class="course_container">
             <div class="flex-wrap">
                 <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
@@ -27,7 +28,7 @@ sql instal
             </div>
         </div>
         <div class="btn_container">
-            <a href="sql/sql_1" class="btn-flat-border">第1章を学習する</a>
+            <a href="law/law_1" class="btn-flat-border">第1ステージを学習する</a>
         </div>
 
         <!--第2章-->
@@ -69,9 +70,3 @@ sql instal
 
     </div>
 </body>
-
-<a href="sql/sql_1">sql_1</a>
-<a href="sql/sql_2">sql_2</a>
-<a href=""></a>
-
-@include('header')
