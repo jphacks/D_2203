@@ -28,3 +28,11 @@ Route::get('/courses/{course}/{course2}', [CourseController::class, 'detail'])->
 Route::post('/courses/{course}/{course2}/update', [ClearController::class, 'clear']);
 
 require __DIR__.'/auth.php';
+
+
+// use App\Http\Controllers\Controller;
+
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+// Route::get('/top', [Controller::class, 'top'])->name('top');

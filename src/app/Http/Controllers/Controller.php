@@ -10,4 +10,9 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    // public function home(){ 
+    //     //bladeファイルの名前 (top.blade.phpの場合)
+    //     return view('top');
+    // }
 }
