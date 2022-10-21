@@ -15,7 +15,7 @@
 
 									<div class="widget clearfix">
 
-										<img src="images/footer-widget-logo.png" alt="Image" class="footer-logo">
+										<img src="images/logo-dark.png" alt="Image" class="footer-logo">
 										<!-- 仮 -->
 
 										<!-- <p>私たちは全てのエンジニアを応援しています、 <strong>～～～</strong>, <strong>～～～</strong> &amp; <strong>～～～</strong>がモットーです。</p> -->
