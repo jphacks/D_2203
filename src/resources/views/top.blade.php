@@ -97,7 +97,7 @@
 					</div>
 				</div> -->
 
-				<div class="section parallax min-vh-100 m-0 border-0 d-flex" style="background-image: url('images/parallax/home/11.jpg');" data-bottom-top="background-position:-200px -250px;" data-top-bottom="background-position:0px -400px;">
+				<div class="section parallax min-vh-100 m-0 border-0 d-flex" style="background-image: url('images/parallax/home/background-1.png');" data-bottom-top="background-position:-200px -250px;" data-top-bottom="background-position:0px -400px;">
 					<div class="vertical-middle">
 						<div class="container">
 
