@@ -33,7 +33,7 @@
             <a href="law/law_1" class="btn-flat-border">第1ステージを学習する</a>
         </div>
         <!--第2ステージ-->
-        @if($judge->law_2 == 1)
+        {{-- @if($judge->law_2 == 1)
         <div class="flex">
             @if($judge->law_2_clear == 1)
             <img style="margin-top: 40px" height="50px" src="https://thumb.ac-illust.com/cf/cf770c271115a0f08b09de20532e27e4_t.jpeg" alt="">
@@ -51,8 +51,8 @@
         <div class="btn_container">
             <a href="law/law_2" class="btn-flat-border">第2ステージを学習する</a>
         </div>
-        @endif
-
+        @endif --}}
+{{-- 
         <!--クリアしてない場合-->
         @if($judge->law_2 != 1)
         <div class="flex">
@@ -110,7 +110,7 @@
         <div class="btn_container">
             <p class="btn-flat-border-lock">第2ステージが未クリアです</p>
         </div>
-        @endif
+        @endif --}}
         
 
     </div>

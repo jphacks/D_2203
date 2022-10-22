@@ -27,14 +27,16 @@ class CourseController extends Controller
         $answer = $request->input('clear');
         if(isset($answer)){
             switch ($answer){
-                case 'xxx':
+                case 'step':
                     //law_1_clearを1に変更
                     $judge = Judgement::find(\Auth::user()->judgements_id);
                     $judge->law_1_clear = 1;
                     $judge->law_2 = 1;
+                    $judge->xss_1 = 1;
+                    $judge->sql_1 = 1;
                     $judge->save();
-                    $msg = "正解です";
-                    return view("courses.clear", ['msg' => $msg]);
+                    //$msg = '正解です！';
+                    return view("courses.law");
                 case 'yyy':
                     //law_1_clearを1に変更
                     $judge = Judgement::find(\Auth::user()->judgements_id);
@@ -46,8 +48,7 @@ class CourseController extends Controller
                 case 'zzz':
                     $judge = Judgement::find(\Auth::user()->judgements_id);
                     $judge->law_3_clear = 1;
-                    $judge->xss_1 = 1;
-                    $judge->sql_1 = 1;
+                    
                     $judge->save();
                     $msg = "正解です";
                     return view("courses.clear", ['msg' => $msg]);
@@ -65,27 +66,36 @@ class CourseController extends Controller
                     $judge->save();
                     $msg = "正解です";
                     return view("courses.clear", ['msg' => $msg]);
+                case 'zzz':
+                    $judge = Judgement::find(\Auth::user()->judgements_id);
+                    $judge->xss_3_clear = 1;
+                    $judge->save();
+                    $msg = "正解です";
+                    return view("courses.clear", ['msg' => $msg]);
+                case 'start':
+                    $judge = Judgement::find(\Auth::user()->judgements_id);
+                    $judge->sql_1_clear = 1;
+                    $judge->sql_2 = 1;
+                    $judge->save();
+                    $msg = "正解です";
+                    return view("courses.clear", ['msg' => $msg]);
+                case 'sqli':
+                    $judge = Judgement::find(\Auth::user()->judgements_id);
+                    $judge->sql_2_clear = 1;
+                    $judge->sql_3 = 1;
+                    $judge->save();
+                    $msg = "正解です";
+                    return view("courses.clear", ['msg' => $msg]);
+                case 'aaa':
+                    $judge = Judgement::find(\Auth::user()->judgements_id);
+                    $judge->sql_3_clear = 1;
+                    $judge->save();
+                    $msg = "正解です";
+                    return view("courses.clear", ['msg' => $msg]);
                 return back();
             }
         }
             
-        // if(isset($answer)){
-        //     if($answer == "xxx"){
-        //         //law_1_clearを1に変更
-        //         $judge = Judgement::find(\Auth::user()->judgements_id);
-        //         $judge->law_1_clear = 1;
-        //         $judge->law_2 = 1;
-        //         $judge->save();
-        //         $msg = "正解です";
-        //         return view("courses.clear", ['msg' => $msg]);
-        //     } else if($answer == "yyy"){
-        //         return view("clear");
-        //     }
-        //     else{
-        //         $msg = "不正解です";
-        //         return back();
-        //     }
-        // }
         return view("courses.{$course}.{$course2}");
     }
 }   

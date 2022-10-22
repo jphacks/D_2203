@@ -140,13 +140,14 @@ sda.Fill(dt);
 								</div> -->
 
                                 <p>正しい手順を踏んで脆弱性を発見することができれば、セキュリティ業界に誰でも貢献することができるのです。正しい倫理観を持って、いつか脆弱性の検挙ができるよう頑張りましょう！</p>
-                                <p>この章は以上です。お疲れさまでした。</p>
+                                <p>この章は以上です。キーワードは「step」です。</p>
                                 <div class="content-wrap">
-                                    <div class="container clearfix">
-
-                                        <div class="text-center"><a href="#" class="btn btn-secondary btn-lg w-100" style="max-width: 20rem;"><i class="icon-line-arrow-left me-2" style="position: relative; top: 1px;"></i>コース一覧へ戻る</a></div>
-
-                                    </div>
+                                    <form action="#">
+                                        <input name="clear" type="text" placeholder="キーワード">
+                                        <div class="btn_container">
+                                            <input style="" class="btn-flat-border" type="submit" value="このコースをクリアする">
+                                        </div>
+                                    </form>
                                 </div>
 
                                 <!-- Post Single - Content End -->

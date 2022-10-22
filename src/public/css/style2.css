@@ -5,6 +5,7 @@ a{
 
 
 body{
+    margin-top: 100px;
     background-color: #FAFAFA;
 }
 
@@ -253,3 +254,168 @@ body{
     opacity: 80%;
     color: white;
 }
+
+/*固定エリア*/
+
+/*========= レイアウトのためのCSS ===============*/
+
+h1,h2{
+  font-size:1.2rem;
+}
+
+h2,
+#container-2 p,
+small{
+  margin:0 0 30px 0;
+}
+
+small{
+  display: block;
+  text-align: center;
+}
+/*========= 左固定レイアウトのためのCSS ===============*/
+
+/*左と右を囲う全体のエリア*/
+#wrapper{
+  position: relative;/*position stickyの基点にするため relativeをかける*/
+    display: flex;/*左エリア、右エリア横並び指定*/
+  flex-wrap: wrap;/*ボックスの折り返し可*/
+}
+
+/*左エリア*/
+#fixed-area{
+  /*左固定記述*/
+    position: -webkit-sticky;/*Safari用*/
+    position: sticky;
+  top:0;
+  /*横半分50%　縦を100vhにする*/
+  width: 50%;
+  height: 100vh;
+  /*装飾のためのCSS*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size:cover;
+  color:black;
+  background-color: #f2f2f2;
+}
+
+/*右エリア*/
+#container-2{
+    padding: 100px;
+  /*横半分50%にする*/
+  width:50%;
+}
+/*右各セク
+
+
+*/
+
+@text: #111;
+@base: #f4f4f4;
+@link: #2a3644;
+@button: #f26964;
+@bottom: #ab4b47;
+
+.rounded (@radius: 6px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+      -ms-border-radius: @radius;
+       -o-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.trans (@transition: .1s) {
+  -webkit-transition: all @transition ease-in-out;
+     -moz-transition: all @transition ease-in-out;
+          transition: all @transition ease-in-out;
+ 
+}
+
+* {
+  border:none;
+  list-style:none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font:15px/1.25 'Alef';
+  color:@text;
+}
+
+form {
+  margin:70px auto;
+  background:@link;
+  width:347px;
+  text-align:center;
+  padding:40px;
+  .rounded;
+}
+
+form > h1 {
+  color:@base;
+  text-shadow:1px 1px 0px rgba(0, 0, 0, 0.7);
+  font-weight:400;
+  margin-bottom:20px;
+}
+
+input {
+  background:rgba(0, 0, 0, 0.2);
+  color:black;
+  text-shadow:1px 1px 0px rgba(0, 0, 0,0.3);
+  display:block;
+  width:269px;
+  padding:15px;
+  font-size: ;
+  margin-bottom:10px;
+  .rounded;
+  .trans;
+  outline:none;
+}
+
+input:focus {
+  background:rgba(0, 0, 0, 0.1);
+  .trans;
+}
+
+::-webkit-input-placeholder {
+   color: rgba(225, 225, 225, 0.4);
+}
+
+:-moz-placeholder {
+   color: rgba(225, 225, 225, 0.4); 
+}
+
+::-moz-placeholder {
+   color: rgba(225, 225, 225, 0.4);
+}
+
+:-ms-input-placeholder {  
+   color: rgba(225, 225, 225, 0.4);
+}
+
+button {
+  position:relative;
+  display:block;
+  margin-top:15px;
+  margin-bottom:15px;
+  padding:17px;
+  width:270px;
+  .rounded;
+  .trans;
+  font-size:1.2em;
+  background:@button;
+  color:@base;
+  box-shadow:0px 3px 0px @bottom;
+  cursor:pointer;
+}
+
+button:active {
+  top:3px;
+  box-shadow:none;
+}
+
+
+

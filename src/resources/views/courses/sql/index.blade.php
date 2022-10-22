@@ -9,7 +9,7 @@
                     <p>SQL injectionとはデータベースから不正に情報を引き出したり削除したりする攻撃です．</p>
                     <p>このコースではどの様に情報を引き出すのかを学習します。</p>
                 </div>
-                <img style="width: 400px" src="https://static.vecteezy.com/system/resources/previews/006/843/150/original/xss-attack-black-glyph-icon-cross-site-scripting-software-attack-client-side-code-injection-malware-computer-damage-silhouette-symbol-on-white-space-isolated-illustration-vector.jpg" alt="">
+                <img style="width: 400px; padding:50px;" src="https://budougumi0617.github.io/logos/mysql.png" alt="">
             </div>
         </div>
         <!--第1ステージ-->
@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="btn_container">
-            <a href="/sql/sql_2" class="btn-flat-border">第2ステージを学習する</a>
+            <a href="sql/sql_2" class="btn-flat-border">第2ステージを学習する</a>
         </div>
         @endif
 
