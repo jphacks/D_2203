@@ -46,6 +46,7 @@
 						<div class="emphasis-title center">
 							<h1 data-animate="fadeInUp"><span class="type_2">ぺ</span>ねら<span class="type_3">ぼ</span><span class="type_1">へ</span><span class="type_4">ようこそ</spaan></h1>
 							<h3 data-animate="fadeInUp">～初めてのセキュリティ～</h3>
+							<a  href="/courses"><h3 style="color: rgb(87, 189, 226)" data-animate="fadeInUp">ぺねらぼで学習する</h3></a>
 						</div>
 					 </div>
                     </div>
