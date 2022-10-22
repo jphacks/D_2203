@@ -8,13 +8,12 @@
         <link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet">
         <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|M+PLUS+Rounded+1c:300,400,500,700,800|Quicksand:400,700&amp;display=swap" as="style">    
     </head>
-    <body>
         <header>
-        @include('header')
+        
         </header>
         @yield('content')
         <footer>
-        @include('footer')
+        @include('footer2')
         </footer>
     </body>
 </html>
