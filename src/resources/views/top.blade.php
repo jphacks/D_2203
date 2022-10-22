@@ -122,7 +122,7 @@
 						<div>
 							<h3 class="text-uppercase" style="font-weight: 600;">納得のいく解説</h3>
 							<p style="line-height: 1.8;">なぜ脆弱性は生まれるのでしょうか？<br>なぜこのプログラムは危険なのでしょうか？<br>丁寧な解説資料でいつでも確認できます。</p>
-							<a href="#" class="button button-border button-light button-rounded text-uppercase m-0">Read More</a>
+							<!-- <a href="#" class="button button-border button-light button-rounded text-uppercase m-0">Read More</a> -->
 							<i class="icon-bulb bgicon"></i>
 						</div>
 					</div>
@@ -131,7 +131,7 @@
 						<div>
 							<h3 class="text-uppercase" style="font-weight: 600;">安全な設計</h3>
 							<p style="line-height: 1.8;">実際に危険なプログラムを動かすのはちょっと怖いですよね？<br>安心・安全のシナリオで設計されたチュートリアルは環境構築が不要<br>詳しい原理も不安なく学ぶことができます</p>
-							<a href="#" class="button button-border button-light button-rounded text-uppercase m-0">Read More</a>
+							<!-- <a href="#" class="button button-border button-light button-rounded text-uppercase m-0">Read More</a> -->
 							<i class="icon-cog bgicon"></i>
 						</div>
 					</div>
@@ -140,7 +140,7 @@
 						<div>
 							<h3 class="text-uppercase" style="font-weight: 600;">さらなる理解へ</h3>
 							<p style="line-height: 1.8;">もし物足りなくなったらリファレンスをのぞいてみてください。<br>セキュリティの世界がもっと面白くなるようなコラムの数々を<br>用意しています。</p>
-							<a href="#" class="button button-border button-light button-rounded text-uppercase m-0">Read More</a>
+							<!-- <a href="#" class="button button-border button-light button-rounded text-uppercase m-0">Read More</a> -->
 							<i class="icon-thumbs-up bgicon"></i>
 						</div>
 					</div>
