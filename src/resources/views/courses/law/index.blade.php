@@ -1,6 +1,78 @@
 @extends('layout')
 @section('title','ぺねらぼ | 法律')
 @section('content')
+<header class="site-header">
+    <div class="wrapper site-header__wrapper">
+      <a href="/" class="brand">ぺねらぼ</a>
+      <nav class="nav">
+        <a class="nav__toggle" aria-expanded="false" type="button">
+          menu
+        </a>
+        <ul class="nav__wrapper">
+          <li class="nav__item"><a href="/">Home</a></li>
+          <li class="nav__item"><a href="/courses">コース一覧</a></li>
+          <li class="nav__item">
+            @guest <!--ログインしていなかったら表示-->
+            <a href="{{ url('/register') }}"><i class="fa-solid fa-circle-user header_login_button"></i></a>
+            @endguest</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <style>
+
+.brand {
+  font-weight: bold;
+  font-size: 20px; }
+ 
+.site-header {
+  position: relative;
+  background-color: #def7ff; }
+ 
+.site-header__wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (min-width: 600px) {
+    .site-header__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: 0; } }
+@media (min-width: 600px) {
+  .nav__wrapper {
+    display: flex; } }
+ 
+@media (max-width: 599px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #d9f0f7;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+    .nav__wrapper.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0); } }
+ 
+.nav__item a {
+  display: block;
+  padding: 1.5rem 1rem; }
+ 
+.nav__toggle {
+  display: none; }
+  @media (max-width: 599px) {
+    .nav__toggle {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem; } }
+  </style>
     <div class="main">
         <div class="course_container">
             <div class="flex bg-white justify-between">
@@ -20,15 +92,7 @@
             @endif
             <h3 class="syo">第1ステージ</h3>
         </div>
-        
-        <div class="course_container">
-            <div class="flex-wrap">
-                <img style="width: 50%;" src="{{asset('images/law_1/law_1_1.png')}}" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-            </div>
-        </div>
+            <img style="margin-left: 200px" width="70%" src="{{asset('images/1/1.png')}}" alt="">
         <div class="btn_container">
             <a href="law/law_1" class="btn-flat-border">第1ステージを学習する</a>
         </div>
