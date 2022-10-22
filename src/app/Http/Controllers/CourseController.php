@@ -44,54 +44,53 @@ class CourseController extends Controller
                     $judge->law_3 = 1;
                     $judge->save();
                     $msg = "正解です";
-                    return view("courses.clear", ['msg' => $msg]);
+                    return view("courses.law");
                 case 'zzz':
                     $judge = Judgement::find(\Auth::user()->judgements_id);
                     $judge->law_3_clear = 1;
                     
                     $judge->save();
                     $msg = "正解です";
-                    return view("courses.clear", ['msg' => $msg]);
-                case 'aaa':
+                    return view("courses.law");
+                case 'xssis':
                     $judge = Judgement::find(\Auth::user()->judgements_id);
                     $judge->xss_1_clear = 1;
                     $judge->xss_2 = 1;
                     $judge->save();
                     $msg = "正解です";
-                    return view("courses.clear", ['msg' => $msg]);
-                case 'aaa':
+                    return view("courses.xss");
+                case 'xssstep':
                     $judge = Judgement::find(\Auth::user()->judgements_id);
                     $judge->xss_2_clear = 1;
                     $judge->xss_3 = 1;
                     $judge->save();
                     $msg = "正解です";
-                    return view("courses.clear", ['msg' => $msg]);
-                case 'zzz':
+                    return view("courses.xss");
+                case 'xssss':
                     $judge = Judgement::find(\Auth::user()->judgements_id);
                     $judge->xss_3_clear = 1;
                     $judge->save();
                     $msg = "正解です";
-                    return view("courses.clear", ['msg' => $msg]);
+                    return view("courses.xss");
                 case 'start':
                     $judge = Judgement::find(\Auth::user()->judgements_id);
                     $judge->sql_1_clear = 1;
                     $judge->sql_2 = 1;
                     $judge->save();
                     $msg = "正解です";
-                    return view("courses.clear", ['msg' => $msg]);
-                case 'sqli':
+                    return view("courses.sql");
+                case 'step':
                     $judge = Judgement::find(\Auth::user()->judgements_id);
                     $judge->sql_2_clear = 1;
                     $judge->sql_3 = 1;
                     $judge->save();
                     $msg = "正解です";
-                    return view("courses.clear", ['msg' => $msg]);
-                case 'aaa':
+                    return view("courses.sql");
+                case 'sqli':
                     $judge = Judgement::find(\Auth::user()->judgements_id);
                     $judge->sql_3_clear = 1;
                     $judge->save();
-                    $msg = "正解です";
-                    return view("courses.clear", ['msg' => $msg]);
+                    return view("courses.sql");
                 return back();
             }
         }

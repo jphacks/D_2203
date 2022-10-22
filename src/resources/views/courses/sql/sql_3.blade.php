@@ -1,6 +1,6 @@
 
 @extends('layout')
-@section('title','ぺねらぼ | SQL | ステージ2')
+@section('title','ぺねらぼ | SQL | ステージ3')
 @section('content')
 <header class="site-header">
     <div class="wrapper site-header__wrapper">
@@ -27,26 +27,25 @@
         <div class="area">
         <h2>ログインの裏側</h2>
         <p>ログイン機能の裏側にはデータベースとの照合があることはすでに学習しました。</p>
-        <p>実際には「SELECT * FROM user WHERE username=(:username) and password=(:password)」という文が書かれています。</p>
-        <p>入力したユーザーネームとパスワードに合致するユーザーが存在するか</p>
+        <p>実際には「SELECT * FROM user WHERE username='(:username)' and password='(:password)';」という文が書かれています。</p>
+        <p>入力したユーザーネームとパスワードに合致するユーザーが存在するかを確認しています。</p>
         
         </div>
       <!--/area1--></section>
         <section>
         <div class="area">
-        <h2>意図しない文字列とは？</h2>
-        <p>まず本来の入力に対してSQLは「usernameとpasswordが一致したらログイン」という方法を取っています。</p>
-        <p>このusernameとpasswordはデータベースに保存されている「penerabo」と「penerabo_password」で比較を行っています。</p>
-        <p>この比較を無理やりTrue(真)にしたらどうなるでしょうか？</p>
+        <h2>無理やりTrueにされる</h2>
+        <p>この「and password='(:password)'」の部分に「' or 1=1;--」という入力を行うと...</p>
+        <p>「and password='' or 1=1;--」となり、「パスワードが空であるか1が1であるか」という認証に変わります。</p>
+        <p>1=1は絶対にTrueなので認証を通ってログインができてしまうのです。</p>
+        <p>今回の様にログインだけでなく、「union」というものを使って文を伸ばすこともできます。そこで全部のデータを削除だったり、特定のデータを引き出したりすることが可能になります。</p>
         </div>
       <!--/area2--></section>
         <section>
         <div class="area">
-        <h2>試してみましょう</h2>
-        <p>usernameは「penerabo」でパスワードは秘密です。秘密ですが、無理やりパスワード比較の結果をTrueにしてみましょう。</p>
-        <p>passwordに「' or 1=1;--」と入力してください。</p>
-        <p>ログインに成功するとキーワードがでてきます。</p>
-        <p>なぜこの入力でログインできてしまうのかは次のステージで解説します。</p>
+        <h2>対策</h2>
+        <p>対策としてはエスケープ処理というものがあります。</p>
+        
         </div>
         <form action="#">
             <input name="clear" type="text" placeholder="キーワード">

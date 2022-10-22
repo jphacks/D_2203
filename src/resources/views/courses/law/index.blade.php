@@ -84,7 +84,6 @@
                 <img style="width: 400px" src="https://s3-ap-northeast-1.amazonaws.com/cdn.kuraneo2.jp/production/imgs/images/000/044/311/original.?1573890686" alt="">
             </div>
         </div>
-
         <!--第1ステージ-->
         <div class="flex">
             @if($judge->law_1_clear == 1)
@@ -92,7 +91,7 @@
             @endif
             <h3 class="syo">第1ステージ</h3>
         </div>
-            <img style="margin-left: 200px" width="70%" src="{{asset('images/1/1.png')}}" alt="">
+            <img style="margin-left: 200px" width="70%" src="https://pbs.twimg.com/media/FfpTw9TVsAAKcur?format=png&name=large" alt="">
         <div class="btn_container">
             <a href="law/law_1" class="btn-flat-border">第1ステージを学習する</a>
         </div>

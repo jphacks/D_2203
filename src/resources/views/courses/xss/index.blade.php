@@ -1,6 +1,24 @@
 @extends('layout')
 @section('title','ぺねらぼ | XSS')
 @section('content')
+<header class="site-header">
+    <div class="wrapper site-header__wrapper">
+      <a href="/" class="brand">ぺねらぼ</a>
+      <nav class="nav">
+        <a class="nav__toggle" aria-expanded="false" type="button">
+          menu
+        </a>
+        <ul class="nav__wrapper">
+          <li class="nav__item"><a href="/">Home</a></li>
+          <li class="nav__item"><a href="/courses">コース一覧</a></li>
+          <li class="nav__item">
+            @guest <!--ログインしていなかったら表示-->
+            <a href="{{ url('/register') }}"><i class="fa-solid fa-circle-user header_login_button"></i></a>
+            @endguest</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
     <div class="main">
         <div class="course_container">
             <div class="flex bg-white justify-between">
@@ -20,14 +38,8 @@
             @endif
             <h3 class="syo">第1ステージ</h3>
         </div>
-        <div class="course_container">
-            <div class="flex-wrap">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-            </div>
-        </div>
+        <img style="margin-left: 200px" width="70%" src="https://pbs.twimg.com/media/FfpW7suUYAAiRaw?format=png&name=large" alt="">
+        
         <div class="btn_container">
             <a href="xss/xss_1" class="btn-flat-border">第1ステージを学習する</a>
         </div>
@@ -38,14 +50,8 @@
             <p class="syo-mi" style="color: red">※法律ステージが未クリアなので進めないよ!</p>
         </div>
         
-        <div class="course_container">
-            <div class="flex-wrap">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-            </div>
-        </div>
+        <img style="margin-left: 200px" width="70%" src="https://pbs.twimg.com/media/FfpW7suUYAAiRaw?format=png&name=large" alt="">
+        
         <div class="btn_container">
             <p class="btn-flat-border-lock">法律ステージが未クリアです</p>
         </div>
@@ -58,14 +64,8 @@
             @endif
             <h3 class="syo">第2ステージ</h3>
         </div>
-        <div class="course_container">
-            <div class="flex-wrap">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-            </div>
-        </div>
+        <img style="margin-left: 200px" width="70%" src="https://pbs.twimg.com/media/FfpW764UAAASS5F?format=png&name=large" alt="">
+        
         <div class="btn_container">
             <a href="xss/xss_2" class="btn-flat-border">第2ステージを学習する</a>
         </div>
@@ -77,14 +77,8 @@
             <h3 class="syo">第2ステージ</h3>
             <p class="syo-mi" style="color: red">※第1ステージが未クリアなので進めないよ!</p>
         </div>
-        <div class="course_container">
-            <div class="flex-wrap">
-                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
-            </div>
-        </div>
+        <img style="margin-left: 200px" width="70%" src="https://pbs.twimg.com/media/FfpW764UAAASS5F?format=png&name=large" alt="">
+        
         <div class="btn_container">
             <p class="btn-flat-border-lock">第1ステージが未クリアです</p>
         </div>
@@ -96,14 +90,8 @@
             @endif
             <h3 class="syo">第3ステージ</h3>
         </div>
-        <div class="course_container">
-            <div class="flex-wrap">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%;" src="https://prog-8.com/images/ogp/default.png" alt="">
-            </div>
-        </div>
+        <img style="margin-left: 200px" width="70%" src="https://pbs.twimg.com/media/FfpW8LCUYAAoYSu?format=png&name=large" alt="">
+        
         <div class="btn_container">
             <a href="xss/xss_3" class="btn-flat-border">第3ステージを学習する</a>
         </div>
@@ -115,14 +103,8 @@
             <h3 class="syo">第3ステージ</h3>
             <p class="syo-mi" style="color: red">※第2ステージが未クリアなので進めないよ!</p>
         </div>
-        <div class="course_container">
-            <div class="flex-wrap">
-                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
-                <img style="width: 50%; filter: blur(10px);" src="https://prog-8.com/images/ogp/default.png" alt="">
-            </div>
-        </div>
+        <img style="margin-left: 200px" width="70%" src="https://pbs.twimg.com/media/FfpW8LCUYAAoYSu?format=png&name=large" alt="">
+        
         <div class="btn_container">
             <p class="btn-flat-border-lock">第2ステージが未クリアです</p>
         </div>
