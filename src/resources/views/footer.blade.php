@@ -41,17 +41,7 @@
 
 									<div class="widget widget_links clearfix">
 
-										<h4>Blogroll</h4>
-
-										<ul>
-											<li><a href="https://codex.wordpress.org/">Documentation</a></li>
-											<li><a href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
-											<li><a href="https://wordpress.org/extend/plugins/">Plugins</a></li>
-											<li><a href="https://wordpress.org/support/">Support Forums</a></li>
-											<li><a href="https://wordpress.org/extend/themes/">Themes</a></li>
-											<li><a href="https://wordpress.org/news/">Blog</a></li>
-											<li><a href="https://planet.wordpress.org/">~~~~~~~~~</a></li>
-										</ul>
+										
 
 									</div>
 
